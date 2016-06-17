@@ -1,0 +1,12 @@
+version: '2'
+services:
+    bills-postgresql:
+        container_name: bills-postgresql
+        image: postgres:9.5.2
+        # volumes:
+        #     - ~/volumes/jhipster/bills/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=bills
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
